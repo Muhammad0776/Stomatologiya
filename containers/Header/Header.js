@@ -3,13 +3,7 @@ import {
   faInstagram,
   faInvision,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCalendar,
-  faMapMarker,
-  faMapMarkerAlt,
-  faPhone,
-  faPhoneAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "@material-ui/core";
 import React, { useState } from "react";
@@ -21,11 +15,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from "reactstrap";
 import HeaderWrapper from "./HeaderWrapper";
 
@@ -38,7 +27,7 @@ const Header = (props) => {
     <HeaderWrapper>
       <div className="container">
         {/* Navbar start */}
-        <Navbar light expand="md">
+        <Navbar light expand="md pb-0">
           <NavbarBrand href="/">
             <img className="logo" src="/images/logo.png" alt="" />
           </NavbarBrand>
@@ -82,28 +71,41 @@ const Header = (props) => {
                 </NavLink>
               </NavItem>
             </Nav>
-            <div className="d-flex pe-4">
+            <div className="d-flex pe-4 subtitle">
               <FontAwesomeIcon className="me-2 mt-3" icon={faMapMarkerAlt} />
               <p className=" mt-3">
                 Чебоксары, <br /> Энтузиастов 1А{" "}
               </p>
             </div>
             <div className=" d-flex pe-4">
-              <FontAwesomeIcon className="me-2 mt-3" icon={faPhoneAlt} />
+              <FontAwesomeIcon
+                className="subtitle me-2 mt-3"
+                icon={faPhoneAlt}
+              />
               <p className="fw-bold mt-3">+7900 333 10 40</p>
             </div>
-            <Button className="" variant="contained" color="primary">
+            <Button className="but" variant="contained" color="primary">
               Заказать звонок
             </Button>
           </Collapse>
         </Navbar>
 
-        {/* Header start */}
-        <Header className="bg-imag">
-          <div className="sidebar text-center">
-            <p>— Стоматология в Чебоксарах</p>
+        {/* section start */}
+        <section className="bg-image rounded">
+          <div className="sidebar h-100 py-4 text-start mt-5 pt-5">
+            <p> — Стоматология в Чебоксарах </p>
+            <h1 className="mb-4">
+              Лечение зубов <br /> в тот же день
+            </h1>
+            <p>
+              Мы проведем полную консультацию, <br /> профессиональную гигиену
+              полости рта, <br /> лечение зубов и десен
+            </p>
+            <Button className="mt-4 button" variant="contained" color="primary">
+              Заказать звонок
+            </Button>
           </div>
-        </Header>
+        </section>
       </div>
     </HeaderWrapper>
   );

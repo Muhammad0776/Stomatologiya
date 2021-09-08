@@ -12,9 +12,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Dashboard</title>
+        <title>Stomatologiya</title>
         <meta name="description" content="next app dashboard" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/public/logo.png" />
       </Head>
       <Provider store={store}>
         <GlobalStyle />

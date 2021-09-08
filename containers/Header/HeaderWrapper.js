@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import img from "../../public/images/bg-head.png";
 
 const HeaderWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
@@ -26,7 +25,7 @@ const HeaderWrapper = styled.div`
     color: #217a99 !important;
   }
 
-  p {
+  .subtitle {
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -36,20 +35,56 @@ const HeaderWrapper = styled.div`
     cursor: alias;
   }
 
-  Button {
+  .but {
     font-size: 12px;
     background: #38bcea;
     border-radius: 3px;
   }
-  Button:hover {
+  .but:hover {
     background: #38bcea;
   }
 
-  ${"" /* Header style */}
-  .bg-imag {
-    ${"" /* background-image: url({img}); */}
+  ${"" /* section style */}
+  .bg-image {
+    background-image: url("/images/bg-head.png");
     background-size: cover;
     background-position: 50% 50%;
+  }
+
+  .sidebar {
+    background: linear-gradient(
+      90deg,
+      #ffffff 20.07%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 700px !important;
+  }
+
+  .button {
+    width: 215px;
+    height: 50px;
+    background: #38bcea;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+  }
+  .button:hover {
+    background: #38bcea;
+  }
+
+  .img01 {
+    width: 27px;
+    height: 37px;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px;
   }
 `;
 
