@@ -78,11 +78,13 @@ const Header = (props) => {
               </p>
             </div>
             <div className=" d-flex pe-4">
-              <FontAwesomeIcon
-                className="subtitle me-2 mt-3"
-                icon={faPhoneAlt}
-              />
-              <p className="fw-bold mt-3">+7900 333 10 40</p>
+              <a href="tel:+998911919442">
+                {" "}
+                <FontAwesomeIcon
+                  className="subtitle me-2 mt-3"
+                  icon={faPhoneAlt}
+                />
+              </a>
             </div>
             <Button className="but" variant="contained" color="primary">
               Заказать звонок
